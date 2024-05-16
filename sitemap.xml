@@ -2,72 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/connecting/copying-data/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/connecting/generate-key/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/connecting/getting-account/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/connecting/ssh-connection/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/slurm/commands/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/slurm/conda/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/slurm/job-scripts/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/slurm/nextflow/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/slurm/overview-slurm/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/slurm/run-job/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/slurm/screen-tmux/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/slurm/snakemake/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://github.com/lucianhu/hpc-starter-guide/slurm/temporary/</loc>
-         <lastmod>2024-05-15</lastmod>
+         <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
