@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="HPC Documentation">
+        <meta name="description" content="HPC Starter Guide">
       
       
         <meta name="author" content="Quynh Nhu Nguyen">
@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://github.com/lucianhu/hpc-starter-guide/connecting/generate-key/">
       
       
-        <link rel="prev" href="../getting-account/">
+        <link rel="prev" href="../ssh-connection/">
       
       
-        <link rel="next" href="../ssh-connection/">
+        <link rel="next" href="../copying-data/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>SSH keys - HPC Documentation</title>
+        <title>SSH keys - HPC Starter Guide</title>
       
     
     
@@ -105,7 +105,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="HPC Documentation" class="md-header__button md-logo" aria-label="HPC Documentation" data-md-component="logo">
+    <a href="../.." title="HPC Starter Guide" class="md-header__button md-logo" aria-label="HPC Starter Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -119,7 +119,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            HPC Documentation
+            HPC Starter Guide
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -318,13 +318,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="HPC Documentation" class="md-nav__button md-logo" aria-label="HPC Documentation" data-md-component="logo">
+    <a href="../.." title="HPC Starter Guide" class="md-nav__button md-logo" aria-label="HPC Starter Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    HPC Documentation
+    HPC Starter Guide
   </label>
   
     <div class="md-nav__source">
@@ -428,6 +428,27 @@
   
   <span class="md-ellipsis">
     Registration account
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ssh-connection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SSH Connection
   </span>
   
 
@@ -562,27 +583,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ssh-connection/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    SSH Connection
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -991,7 +991,7 @@
 <p>When connecting via SSH, entering your password every time can be repetitive. SSH keys offer a password-free alternative, enhancing both convenience and security. </p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Smile's clusters still use passwords, while <strong>lulu's clusters require users to submit public keys for authentication</strong>.</p>
+<p>SMILE's cluster still uses passwords, while <strong>LULU's cluster requires users to submit public keys for authentication</strong>.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -1009,7 +1009,7 @@
 <p>Your terminal should respond:</p>
 <div class="highlight"><pre><span></span><code>Generating public/private ed25519 key pair.
 </code></pre></div>
-<p>Press Enter to accept the default value. Choose a strong passphrase to protect your account if your private key is compromised.</p>
+<p>Do not change the filename. Press “Enter”. Choose a strong passphrase to protect your account if your private key is compromised.</p>
 <div class="highlight"><pre><span></span><code>Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 </code></pre></div>
@@ -1063,25 +1063,49 @@ and share it with the cluster administrator.</p>
 <p>We recommend using MobaXterm on Windows for SSH connections as it simplifies SSH key management. </p>
 <p>To get MobaXterm:</p>
 <ul>
-<li>Visit https://mobaxterm.mobatek.net/download-home-edition.html</li>
-<li>Download either the Portable edition (blue button on the left, suitable for users without admin rights) or the Installer edition (green button on the right, requires admin rights).</li>
-<li>Install or unpack MobaXterm and launch the software. Remember to dismiss any firewall warnings that may appear.</li>
+<li>
+<p>Visit https://mobaxterm.mobatek.net/download-home-edition.html</p>
+</li>
+<li>
+<p>Download either the Portable edition (blue button on the left, suitable for users without admin rights) or the Installer edition (green button on the right, requires admin rights).</p>
+</li>
+<li>
+<p>Install or unpack MobaXterm and launch the software. Remember to dismiss any firewall warnings that may appear.</p>
+</li>
 </ul>
 <p>Here's how to set up SSH keys with MobaXterm:</p>
 <ul>
-<li>Open MobaXterm.</li>
-<li>Go to Tools -&gt; MobaKeyGen (SSH key generator).</li>
-<li>Click "Generate" with default settings.</li>
-<li>Move your mouse to generate randomness.</li>
-<li>Save the public key as id_rsa.pub and the private key (keep this secret!) as id_rsa.ppk.</li>
-<li>Upload your public key: Copy the public key text and forward it to the cluster administrator.</li>
-<li>Connect to a cluster using MobaXterm.</li>
+<li>
+<p>Open MobaXterm</p>
+</li>
+<li>
+<p>Go to Tools -&gt; MobaKeyGen (SSH key generator)</p>
+</li>
+<li>
+<p>Click "Generate" with default settings</p>
+</li>
+<li>
+<p>Move your mouse to generate randomness</p>
+</li>
+<li>
+<p>Save the public key as id_rsa.pub and the private key (keep this secret!) as id_rsa.ppk</p>
+</li>
+<li>
+<p>Upload your public key: Copy the public key text and forward it to the cluster administrator</p>
+</li>
+<li>
+<p>Connect to a cluster using MobaXterm</p>
+</li>
 </ul>
 <h2 id="connecting-from-another-computerlaptop">Connecting from Another Computer/Laptop</h2>
 <p>To connect to the cluster from a different computer than the one where your SSH keys are stored, you have two options:</p>
 <ul>
-<li>Generate a new SSH key pair and submit the public part as explained earlier.</li>
-<li>Copy the private part of the SSH key (<code>~/.ssh/id_ed25519</code>) to the second computer in the same location.</li>
+<li>
+<p>Generate a new SSH key pair and submit the public part as explained earlier.</p>
+</li>
+<li>
+<p>Copy the private part of the SSH key (<code>~/.ssh/id_ed25519</code>) to the second computer in the same location.</p>
+</li>
 </ul>
 <div class="highlight"><pre><span></span><code>$ cd ~/.ssh
 $ chmod g-rwx id_ed25519*
@@ -1111,7 +1135,7 @@ $ ssh-add id_ed25519
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 16, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 17, 2024</span>
   </span>
 
     
@@ -1147,7 +1171,7 @@ $ ssh-add id_ed25519
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../getting-account/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Registration account">
+          <a href="../ssh-connection/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SSH Connection">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1157,20 +1181,20 @@ $ ssh-add id_ed25519
                 Previous
               </span>
               <div class="md-ellipsis">
-                Registration account
+                SSH Connection
               </div>
             </div>
           </a>
         
         
           
-          <a href="../ssh-connection/" class="md-footer__link md-footer__link--next" aria-label="Next: SSH Connection">
+          <a href="../copying-data/" class="md-footer__link md-footer__link--next" aria-label="Next: Data transfer">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                SSH Connection
+                Data transfer
               </div>
             </div>
             <div class="md-footer__button md-icon">
