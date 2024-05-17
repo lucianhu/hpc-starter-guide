@@ -1,5 +1,6 @@
 # HPC Starter Guide
-Welcome to the HPC Starter Guide for **Lulu Supercomputers**! This repository is dedicated to providing comprehensive tutorials and resources for individuals who are new to high-performance computing (HPC) and are looking to learn about SSH for secure remote access and SLURM for job scheduling and management.
+
+Welcome to the HPC Starter Guide for **LULU Supercomputers**! This repository is dedicated to providing comprehensive tutorials and resources for individuals who are new to high-performance computing (HPC) and are looking to learn about SSH for secure remote access and SLURM for job scheduling and management.
 
 ## About
 High-performance computing (HPC) plays a crucial role in scientific research, data analysis, and computational simulations by providing the computational power necessary to tackle complex problems. However, for beginners, navigating the world of HPC can be daunting. This guide aims to simplify the learning process by offering step-by-step tutorials and explanations on key concepts and tools used in HPC environments.

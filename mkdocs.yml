@@ -1,6 +1,6 @@
 # Project information
-site_name: HPC Documentation
-site_description: HPC Documentation
+site_name: HPC Starter Guide
+site_description: HPC Starter Guide
 site_author: Quynh Nhu Nguyen
 site_url: https://github.com/lucianhu/hpc-starter-guide
 
@@ -113,8 +113,8 @@ nav:
     
     - "Accessing HPC":
       - "Registration account": connecting/getting-account.md
-      - "SSH keys": connecting/generate-key.md      
       - "SSH Connection": connecting/ssh-connection.md
+      - "SSH keys": connecting/generate-key.md      
       - "Data transfer": connecting/copying-data.md
     
     - "Running Jobs":

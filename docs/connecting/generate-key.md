@@ -3,7 +3,7 @@
 When connecting via SSH, entering your password every time can be repetitive. SSH keys offer a password-free alternative, enhancing both convenience and security. 
 
 !!! warning 
-    Smile's clusters still use passwords, while **lulu's clusters require users to submit public keys for authentication**.
+    SMILE's cluster still uses passwords, while **LULU's cluster requires users to submit public keys for authentication**.
 
 !!! info
     Currently, GitHub utilizes SSH for accessing and editing data in its repositories.
@@ -32,7 +32,7 @@ Your terminal should respond:
 Generating public/private ed25519 key pair.
 ```
 
-Press Enter to accept the default value. Choose a strong passphrase to protect your account if your private key is compromised.
+Do not change the filename. Press “Enter”. Choose a strong passphrase to protect your account if your private key is compromised.
 
 ```
 Enter passphrase (empty for no passphrase):
@@ -116,23 +116,33 @@ We recommend using MobaXterm on Windows for SSH connections as it simplifies SSH
 To get MobaXterm:
 
 * Visit https://mobaxterm.mobatek.net/download-home-edition.html
+
 * Download either the Portable edition (blue button on the left, suitable for users without admin rights) or the Installer edition (green button on the right, requires admin rights).
+
 * Install or unpack MobaXterm and launch the software. Remember to dismiss any firewall warnings that may appear.
 
 Here's how to set up SSH keys with MobaXterm:
 
-* Open MobaXterm.
-* Go to Tools -> MobaKeyGen (SSH key generator).
-* Click "Generate" with default settings.
-* Move your mouse to generate randomness.
-* Save the public key as id_rsa.pub and the private key (keep this secret!) as id_rsa.ppk.
-* Upload your public key: Copy the public key text and forward it to the cluster administrator.
-* Connect to a cluster using MobaXterm.
+* Open MobaXterm
+
+* Go to Tools -> MobaKeyGen (SSH key generator)
+
+* Click "Generate" with default settings
+
+* Move your mouse to generate randomness
+
+* Save the public key as id_rsa.pub and the private key (keep this secret!) as id_rsa.ppk
+
+* Upload your public key: Copy the public key text and forward it to the cluster administrator
+
+* Connect to a cluster using MobaXterm
 
 ## Connecting from Another Computer/Laptop
+
 To connect to the cluster from a different computer than the one where your SSH keys are stored, you have two options:
 
 * Generate a new SSH key pair and submit the public part as explained earlier.
+
 * Copy the private part of the SSH key (`~/.ssh/id_ed25519`) to the second computer in the same location.
 
 ```
@@ -143,8 +153,3 @@ $ ssh-add id_ed25519
 
 !!! danger
     Do not keep the key on any USB stick. Delete it after transferring the file. This is sensitive data. Ensure that the files are only readable by you.
-
-
-
-
-
